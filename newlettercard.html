@@ -1,420 +1,153 @@
 <!DOCTYPE html>
-
-<html class="light" lang="en"><head>
+<html lang="en">
+<head>
 <meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Newsletter Card Template</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&amp;family=Hanken+Grotesk:wght@500;600&amp;family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    "colors": {
-                        "on-error": "#ffffff",
-                        "surface-container-low": "#f6f3ee",
-                        "on-secondary-fixed": "#1b1c1a",
-                        "on-secondary": "#ffffff",
-                        "surface-bright": "#fcf9f4",
-                        "on-tertiary-container": "#848484",
-                        "on-primary-fixed": "#1b1b1b",
-                        "surface-container-highest": "#e5e2dd",
-                        "on-primary-fixed-variant": "#474747",
-                        "tertiary-fixed-dim": "#c7c6c6",
-                        "surface": "#fcf9f4",
-                        "on-tertiary-fixed-variant": "#464747",
-                        "error": "#ba1a1a",
-                        "secondary": "#5e5e5c",
-                        "secondary-fixed": "#e4e2de",
-                        "background": "#fcf9f4",
-                        "outline": "#7e7576",
-                        "surface-container": "#f1ede8",
-                        "on-primary-container": "#848484",
-                        "error-container": "#ffdad6",
-                        "primary-fixed": "#e2e2e2",
-                        "on-primary": "#ffffff",
-                        "inverse-surface": "#31302d",
-                        "primary-container": "#1b1b1b",
-                        "surface-variant": "#e5e2dd",
-                        "on-background": "#1c1c19",
-                        "outline-variant": "#cfc4c5",
-                        "inverse-primary": "#c6c6c6",
-                        "on-secondary-container": "#636360",
-                        "on-tertiary-fixed": "#1b1c1c",
-                        "surface-tint": "#5e5e5e",
-                        "on-error-container": "#93000a",
-                        "primary": "#000000",
-                        "tertiary-fixed": "#e4e2e2",
-                        "on-surface": "#1c1c19",
-                        "on-secondary-fixed-variant": "#474744",
-                        "tertiary-container": "#1b1c1c",
-                        "primary-fixed-dim": "#c6c6c6",
-                        "secondary-container": "#e1dfdc",
-                        "on-tertiary": "#ffffff",
-                        "secondary-fixed-dim": "#c8c6c3",
-                        "surface-container-lowest": "#ffffff",
-                        "tertiary": "#000000",
-                        "surface-container-high": "#ebe8e3",
-                        "surface-dim": "#dcdad5",
-                        "on-surface-variant": "#4c4546",
-                        "inverse-on-surface": "#f3f0eb"
-                    },
-                    "borderRadius": {
-                        "DEFAULT": "0.125rem",
-                        "lg": "0.25rem",
-                        "xl": "0.5rem",
-                        "full": "0.75rem"
-                    },
-                    "spacing": {
-                        "gutter": "24px",
-                        "stack-sm": "16px",
-                        "stack-md": "32px",
-                        "margin-mobile": "20px",
-                        "container-max": "1280px",
-                        "margin-desktop": "64px",
-                        "unit": "8px",
-                        "stack-lg": "64px"
-                    },
-                    "fontFamily": {
-                        "label-md": ["Hanken Grotesk"],
-                        "label-sm": ["Hanken Grotesk"],
-                        "headline-lg-mobile": ["DM Sans"],
-                        "headline-lg": ["DM Sans"],
-                        "body-lg": ["\"Source Serif 4\""],
-                        "display": ["DM Sans"],
-                        "headline-md": ["DM Sans"],
-                        "body-md": ["\"Source Serif 4\""]
-                    },
-                    "fontSize": {
-                        "label-md": ["14px", { "lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600" }],
-                        "label-sm": ["12px", { "lineHeight": "1.2", "fontWeight": "500" }],
-                        "headline-lg-mobile": ["32px", { "lineHeight": "1.2", "fontWeight": "700" }],
-                        "headline-lg": ["48px", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700" }],
-                        "body-lg": ["20px", { "lineHeight": "1.6", "fontWeight": "400" }],
-                        "display": ["72px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
-                        "headline-md": ["32px", { "lineHeight": "1.3", "fontWeight": "500" }],
-                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }]
-                    }
-                }
-            }
-        }
-    </script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Navbharat Times Digest</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@500;700&display=swap">
 <style>
-/* Article Body Enhancements */
-.prose h2 {
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    font-weight: 700;
-    letter-spacing: -0.01em;
-}
-
-.prose h3 {
-    margin-top: 1.5rem;
-    margin-bottom: 0.75rem;
-    font-weight: 600;
-}
-
-.prose ul {
-    margin-bottom: 1.5rem;
-}
-
-.prose li {
-    margin-bottom: 0.5rem;
-}
-
-.prose blockquote {
-    background-color: #f1ede8;
-    padding: 1.5rem;
-    border-radius: 4px;
-}
-
-.prose blockquote p {
-    font-size: 18px;
-    line-height: 1.6;
-}
-
-/* Tag Styling */
-.tag-badge {
-    display: inline-block;
-    background-color: #000000;
-    color: #ffffff;
-    padding: 0.25rem 0.75rem;
-    border-radius: 4px;
-    font-size: 12px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    margin-right: 0.5rem;
-}
-
-/* Engagement Button Styling */
-button {
-    transition: all 0.2s ease;
-}
-
-button:active {
-    transform: scale(0.98);
-}
-
-/* Image Enhancement */
-img {
-    border-radius: 4px;
-}
-
-/* Article Engagement Section */
-.engagement-section {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
-
-/* Author Section */
-.author-avatar {
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    background-color: #000000;
-    color: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 700;
-    font-size: 18px;
-    flex-shrink: 0;
-}
-
-.author-name {
-    font-size: 18px;
-    font-weight: 600;
-    color: #000000;
-}
-
-.author-title {
-    font-size: 12px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    color: #5e5e5c;
-}
-
-.author-bio {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #4c4546;
-}
-
-.author-meta {
-    font-size: 12px;
-    color: #7e7576;
-    display: flex;
-    gap: 0.5rem;
-    flex-wrap: wrap;
-}
-
-@media (max-width: 768px) {
-    .engagement-section {
-        margin-top: 2rem;
-    }
-    
-    .engagement-section button {
-        width: 100%;
-    }
-    
-    .author-section {
-        flex-direction: column;
-    }
-}
+  :root{
+    --ink:#1a1712;
+    --sub:#5a5346;
+    --paper:#faf6ee;
+    --rule:#ded2ba;
+    --nbt:#b5501f;
+  }
+  body{ background:var(--paper); color:var(--ink); font-family:'DM Sans',sans-serif; }
+  .headline{ font-family:'Source Serif 4', serif; }
+  .devnagari{ font-family:'Noto Sans Devanagari', sans-serif; }
+  .rule{ border-color:var(--rule); }
+  .tag{ font-family:'DM Sans',sans-serif; font-size:11px; font-weight:700; letter-spacing:.06em; padding:3px 9px; border-radius:2px; background:var(--nbt); color:#fff; }
+  a.readmore{ color:var(--ink); border-bottom:1px solid var(--ink); padding-bottom:1px; }
+  a.readmore:hover{ opacity:.6; }
+  img{ background:#eee2cf; }
 </style>
-<body class="bg-background text-on-background antialiased selection:bg-primary selection:text-on-primary">
-<!-- TopNavBar -->
-<header class="bg-background border-b border-outline-variant w-full sticky top-0 z-50">
-<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
-<!-- Brand Logo -->
-<a class="font-display text-headline-md text-primary font-bold tracking-tight" href="#">Brand Name</a>
-<!-- Navigation Links (Web) -->
-<nav class="hidden md:flex gap-gutter items-center">
-<a class="font-label-md text-label-md uppercase tracking-wider text-secondary hover:text-primary transition-colors hover:opacity-85" href="newsletters.html">Back to Newsletters</a>
-<a class="font-label-md text-label-md uppercase tracking-wider text-primary font-bold border-b-2 border-primary pb-1 active:scale-95 transition-transform duration-150" href="#">Publish</a>
-</nav>
-<!-- Trailing Action -->
-<button class="bg-primary text-on-primary font-label-md text-label-md uppercase px-4 py-2 rounded transition-opacity hover:opacity-85 active:scale-95 duration-150">Subscribe</button>
-</div>
+</head>
+<body class="antialiased">
+
+<!-- Masthead -->
+<header class="border-b-2" style="border-color:var(--ink);">
+  <div class="max-w-[680px] mx-auto px-5 pt-8 pb-5 text-center">
+    <p class="devnagari text-[15px] font-medium mb-1" style="color:var(--nbt);">नवभारत टाइम्स</p>
+    <h1 class="headline text-[34px] leading-tight font-bold tracking-tight">Navbharat Times Digest</h1>
+    <p class="text-[13px] mt-2" style="color:var(--sub);">Today's top stories, handpicked for you</p>
+    <p class="text-[12px] mt-1" style="color:var(--sub);">Tuesday, September 1, 2026</p>
+  </div>
 </header>
-<!-- Main Content -->
-<main class="w-full px-margin-mobile md:px-margin-desktop py-stack-lg max-w-container-max mx-auto">
-<!-- Article Header -->
-<article class="max-w-[720px] mx-auto">
-<header class="mb-stack-lg text-center">
-<span class="inline-block px-3 py-1 mb-stack-sm bg-surface-container border border-primary font-label-sm text-label-sm uppercase tracking-wider text-primary">Featured Story</span>
-<h1 class="font-display text-headline-lg-mobile md:text-display text-primary mb-stack-sm">Newsletter Heading</h1>
-<div class="flex flex-col md:flex-row gap-stack-sm justify-center items-center text-secondary font-body-md mb-stack-md">
-<span>Month Day, Year</span>
-<span class="hidden md:inline">•</span>
-<span>Read time</span>
-<span class="hidden md:inline">•</span>
-<span class="flex gap-2">
-<span class="bg-primary text-on-primary px-2 py-1 rounded text-label-sm font-label-md uppercase">Category</span>
-<span class="bg-primary text-on-primary px-2 py-1 rounded text-label-sm font-label-md uppercase">Topic</span>
-<span class="bg-primary text-on-primary px-2 py-1 rounded text-label-sm font-label-md uppercase">Tag</span>
-</span>
-</div>
-</header>
-<!-- Author Section -->
-<div class="mb-stack-lg pb-stack-md border-b border-outline-variant flex flex-col md:flex-row gap-stack-md items-start md:items-center">
-<div class="w-12 h-12 rounded-full bg-primary text-on-primary flex items-center justify-center text-xl font-headline-md flex-shrink-0">
-AN
-</div>
-<div class="flex-1">
-<div class="flex flex-col md:flex-row md:items-center md:gap-4 mb-2">
-<h3 class="font-headline-md text-headline-md text-primary">Author Name</h3>
-<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Author Title</span>
-</div>
-<p class="font-body-md text-body-md text-on-surface-variant">Add a short author bio or role summary here.</p>
-<div class="mt-2 flex gap-4 font-label-sm text-secondary">
-<span>Published Month Day, Year</span>
-<span>|</span>
-<span>Updated Month Day, Year</span>
-</div>
-</div>
-</div>
-<figure class="mb-stack-lg border border-outline-variant rounded p-2 bg-surface">
-<img class="w-full h-auto object-cover rounded-sm aspect-[16/9]" data-alt="Newsletter cover or featured visual" src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80"/>
-<figcaption class="mt-2 font-label-sm text-label-sm text-secondary text-right">Image caption or visual context</figcaption>
-</figure>
-<!-- Article Body -->
-<div class="prose max-w-none">
-<p class="font-body-lg text-body-lg text-primary mb-stack-md leading-relaxed">
-Write a short introduction to the story here. Summarize the main idea in 2–3 sentences so readers understand the topic instantly.
-</p>
 
-<h2 class="font-headline-md text-headline-md text-primary mt-stack-lg mb-stack-sm">Section Title</h2>
-<p class="font-body-md text-body-md text-on-surface-variant mb-stack-md leading-relaxed">
-Add the first supporting paragraph here. This is where you explain the background, context, or key issue your audience should know before continuing.
-</p>
+<main class="max-w-[680px] mx-auto px-5 py-10">
 
-<h3 class="font-headline-md text-headline-md text-primary mt-stack-md mb-stack-sm text-xl">Key Point 1</h3>
-<p class="font-body-md text-body-md text-on-surface-variant mb-stack-md leading-relaxed">
-Explain the first key idea, insight, or takeaway. Keep this section clear, informative, and easy to scan.
-</p>
+  <!-- HERO STORY -->
+  <section class="mb-12">
+    <!-- <span class="tag mb-4 inline-block">Column</span> -->
+    <h2 class="headline text-[30px] md:text-[36px] leading-[1.15] font-bold mb-3">
+      नेपाल में 167 KM/h की रफ्तार से नीचे आया था बाढ़ का मलबा, 300 मीटर की चौड़ी नदी 1300 मीटर की हुई
+    </h2>
+    <p class="text-[17px] leading-relaxed mb-4" style="color:var(--sub);">
+      नेपाल में विनाशकारी बाढ़ का शुरुआती वैज्ञानिक आकलन बताता है कि यह ग्लेशियल झील फटने से नहीं, बल्कि ऊंचाई से विशाल बर्फ-चट्टान के टूटकर नदी में गिरने और तेज़ फ्लैश फ्लड बनने से हुई।
+    </p>
+    <img src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA2bk3zj.img?w=768&h=432&m=6" alt="[Hero image alt text]" class="w-full h-auto aspect-[16/9] object-cover mb-4"/>
+    <div class="flex items-center justify-between">
+      <p class="text-[14px]" style="color:var(--sub);">पूनम गौड़ के द्वारा</p>
+      <a class="readmore text-[14px] font-medium" href="https://www.msn.com/hi-in/news/India/%E0%A4%A8%E0%A5%87%E0%A4%AA-%E0%A4%B2-%E0%A4%AE%E0%A5%87%E0%A4%82-167-kmh-%E0%A4%95-%E0%A4%B0%E0%A4%AB%E0%A5%8D%E0%A4%A4-%E0%A4%B0-%E0%A4%B8%E0%A5%87-%E0%A4%A8-%E0%A4%9A%E0%A5%87-%E0%A4%86%E0%A4%AF-%E0%A4%A5-%E0%A4%AC-%E0%A4%A2%E0%A4%BC-%E0%A4%95-%E0%A4%AE%E0%A4%B2%E0%A4%AC-300-%E0%A4%AE-%E0%A4%9F%E0%A4%B0-%E0%A4%95-%E0%A4%9A-%E0%A4%A1%E0%A4%BC-%E0%A4%A8%E0%A4%A6-1300-%E0%A4%AE-%E0%A4%9F%E0%A4%B0-%E0%A4%95-%E0%A4%B9%E0%A5%81%E0%A4%88/ar-AA2bkaoQ?ocid=BingNewsSerp" target="_blank" rel="noopener">Read more &rarr;</a>
+    </div>
+  </section>
 
-<h3 class="font-headline-md text-headline-md text-primary mt-stack-md mb-stack-sm text-xl">Key Point 2</h3>
-<p class="font-body-md text-body-md text-on-surface-variant mb-stack-md leading-relaxed">
-Add another important point here. This could be a challenge, trend, opportunity, or example relevant to the topic.
-</p>
+  <!-- TRENDING NOW -->
+  <section>
+    <div class="flex items-center gap-3 mb-6">
+      <h3 class="headline text-[20px] font-semibold">Trending now</h3>
+      <div class="flex-1 border-t rule"></div>
+    </div>
 
-<h3 class="font-headline-md text-headline-md text-primary mt-stack-md mb-stack-sm text-xl">Key Point 3</h3>
-<p class="font-body-md text-body-md text-on-surface-variant mb-stack-md leading-relaxed">
-Use this section to highlight a specific example, statistic, or action that supports your article's core message.
-</p>
-<ul class="list-disc list-inside font-body-md text-on-surface-variant mb-stack-md space-y-2">
-<li>Bullet point 1</li>
-<li>Bullet point 2</li>
-<li>Bullet point 3</li>
-<li>Bullet point 4</li>
-</ul>
+    <div class="space-y-8">
 
-<!-- Pull Quote -->
-<blockquote class="my-stack-lg border-l-4 border-primary pl-stack-md ml-stack-sm md:ml-stack-lg">
-<p class="font-body-lg text-body-lg text-primary italic leading-relaxed mb-4">"Add a memorable quote, insight, or takeaway here to strengthen the story."</p>
-</blockquote>
+      <!-- Story 1 -->
+      <article class="flex gap-4 pb-8 border-b rule">
+        <div class="flex-1">
+          <!-- <span class="tag mb-2 inline-block">Business</span> -->
+          <h4 class="headline text-[19px] leading-snug font-semibold mb-1.5">
+            CJP calls off Sept 5 march after SC quashes protest FIRs at govt request
+          </h4>
+          <p class="text-[14.5px] leading-relaxed mb-2" style="color:var(--sub);">
+            The CJP cancelled its September 5 march after the Supreme Court quashed FIRs against NEET protesters and the Centre reaffirmed its promises, including compensation for affected students’ families.
+          </p>
+          <div class="flex items-center justify-between">
+            <p class="text-[13px]" style="color:var(--sub);">By Rohitashwa Ranjan</p>
+            <a class="readmore text-[13.5px] font-medium" href="https://timesofindia.indiatimes.com/india/cjp-call-off-sept-5-march-as-govt-moves-sc-to-withdraw-cases-against-protesters/articleshow/133674963.cms" target="_blank" rel="noopener">Read more &rarr;</a>
+          </div>
+        </div>
+        <img src="https://static.toiimg.com/thumb/msid-133674995,imgsize-1244295,width-400,height-225,resizemode-4/representative-image.jpg" alt="[Story 1 image alt]" class="w-28 h-28 object-cover flex-shrink-0"/>
+      </article>
 
-<h2 class="font-headline-md text-headline-md text-primary mt-stack-lg mb-stack-sm">Takeaway</h2>
-<p class="font-body-md text-body-md text-on-surface-variant mb-stack-lg leading-relaxed">
-Wrap up the article with a short conclusion. Summarize why this issue matters and what readers should remember after finishing the piece.
-</p>
-</div>
+      <!-- Story 2 -->
+      <article class="flex gap-4 pb-8 border-b rule">
+        <div class="flex-1">
+          <!-- <span class="tag mb-2 inline-block">India</span> -->
+          <h4 class="headline text-[19px] leading-snug font-semibold mb-1.5">
+            Nepal floods : Bank valults full of cash washed away.
+          </h4>
+          <p class="text-[14.5px] leading-relaxed mb-2" style="color:var(--sub);">
+            Severe floods in Nepal washed away or buried vaults from at least 20 banks, prompting police to recover and secure cash and valuables while also tackling theft and rescue operations.
+          </p>
+          <div class="flex items-center justify-between">
+            <p class="text-[13px]" style="color:var(--sub);">By Kalyan Das</p>
+            <a class="readmore text-[13.5px] font-medium" href="https://timesofindia.indiatimes.com/world/south-asia/nepal-floods-bank-vaults-full-of-cash-washed-away-police-struggle-to-secure-them/articleshow/133665062.cms" target="_blank" rel="noopener">Read more &rarr;</a>
+          </div>
+        </div>
+        <img src="https://static.toiimg.com/thumb/msid-133673592,imgsize-136838,width-400,height-225,resizemode-4/nepal-floods-some-of-these-vaults-contain-huge-amounts-of-cash-and-other-valuables.jpg" alt="[Story 2 image alt]" class="w-28 h-28 object-cover flex-shrink-0"/>
+      </article>
 
-<!-- Article Engagement Section -->
-<div class="mt-stack-lg pt-stack-md border-t border-outline-variant engagement-section">
-<div>
-<p class="font-body-md text-body-md text-primary mb-stack-md font-semibold">What do you think about this story?</p>
-</div>
-<div class="flex flex-col md:flex-row gap-4">
-<button class="flex-1 bg-primary text-on-primary px-6 py-3 rounded font-label-md text-label-md uppercase tracking-wider hover:opacity-85 transition-opacity border border-primary" title="Read more stories like this">
-Read More
-</button>
-<button class="flex-1 border border-primary text-primary px-6 py-3 rounded font-label-md text-label-md uppercase tracking-wider hover:bg-primary hover:text-on-primary transition-colors" title="Save this story for later">
-Save for Later
-</button>
-<button class="flex-1 border border-primary text-primary px-6 py-3 rounded font-label-md text-label-md uppercase tracking-wider hover:bg-primary hover:text-on-primary transition-colors" title="Hide similar stories">
-Not Interested
-</button>
-</div>
-</div>
-<!-- Article Footer / Share -->
-<div class="mt-stack-lg pt-stack-md border-t border-outline-variant flex flex-col md:flex-row justify-between items-center gap-stack-sm">
-<div class="font-label-md text-label-md uppercase text-primary tracking-wider">Share this story</div>
-<div class="flex gap-4">
-<button class="w-10 h-10 rounded border border-primary flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-colors" title="Copy link">
-<span class="material-symbols-outlined" data-icon="link">link</span>
-</button>
-<button class="w-10 h-10 rounded border border-primary flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-colors" title="Share via email">
-<span class="material-symbols-outlined" data-icon="mail">mail</span>
-</button>
-<button class="w-10 h-10 rounded border border-primary flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-colors" title="Share on social">
-<span class="material-symbols-outlined" data-icon="share">share</span>
-</button>
-</div>
-</div>
-</article>
-<!-- Next Issue Preview -->
-<aside class="mt-stack-lg pt-stack-lg border-t border-outline-variant max-w-[720px] mx-auto">
-<h3 class="font-headline-md text-headline-md text-primary mb-stack-md text-center">More from this newsletter</h3>
-<a class="block bg-surface border border-primary p-stack-md group hover:bg-surface-container-low transition-colors" href="newsletters.html">
-<div class="flex flex-col md:flex-row gap-gutter items-start">
-<div class="flex-1">
-<div class="flex gap-2 mb-stack-sm">
-<span class="bg-primary text-on-primary px-2 py-1 rounded text-label-sm font-label-md uppercase">Category</span>
-<span class="bg-primary text-on-primary px-2 py-1 rounded text-label-sm font-label-md uppercase">Topic</span>
-</div>
-<h4 class="font-headline-md text-headline-md text-primary group-hover:underline mb-2">Related Story Title</h4>
-<p class="font-body-md text-body-md text-on-surface-variant mb-2">A short summary of the next article or recommendation goes here.</p>
-<div class="flex items-center gap-2 mb-stack-sm">
-<div class="w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center text-xs font-bold">
-AB
-</div>
-<span class="font-body-md text-on-surface-variant">Author Name</span>
-</div>
-<span class="font-label-sm text-label-sm text-secondary">Read time • Month Day, Year</span>
-</div>
-<div class="w-full md:w-1/3 aspect-video md:aspect-square bg-surface-container-highest border border-outline-variant flex items-center justify-center overflow-hidden">
-<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Related story thumbnail" src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80"/>
-</div>
-</div>
-</a>
-</aside>
+      <!-- Story 3 -->
+      <article class="flex gap-4 pb-8 border-b rule">
+        <div class="flex-1">
+          <!-- <span class="tag mb-2 inline-block">World</span> -->
+          <h4 class="headline text-[19px] leading-snug font-semibold mb-1.5">
+            Ather Energy's 130% stock surge leaves Tesla and BYD behind in 2026.
+          </h4>
+          <p class="text-[14.5px] leading-relaxed mb-2" style="color:var(--sub);">
+            Ather Energy’s stock has surged about 130% in 2026, outperforming Tesla and BYD, driven by rising electric-scooter sales, expanding market share, new product launches, strong investor confidence, and continued backing from Hero MotoCorp.
+          </p>
+          <div class="flex items-center justify-between">
+            <p class="text-[13px]" style="color:var(--sub);">By Ashutosh Joshi</p>
+            <a class="readmore text-[13.5px] font-medium" href="https://economictimes.indiatimes.com/markets/stocks/news/ather-energys-130-stock-surge-leaves-tesla-and-byd-behind-in-2026/articleshow/133672575.cms" target="_blank" rel="noopener">Read more &rarr;</a>
+          </div>
+        </div>
+        <img src="https://img.etimg.com/thumb/msid-133672757,width-210,height-158,imgsize-2026602,resizemode-75/ather-energys-130-stock-surge-leaves-tesla-and-byd-behind-in-2026br.jpg" alt="[Story 3 image alt]" class="w-28 h-28 object-cover flex-shrink-0"/>
+      </article>
+
+
+    </div>
+  </section>
+
+  <!-- ENGAGEMENT: reaction to hero story -->
+  <section class="mt-12 pt-8 border-t rule">
+    <p class="text-[15px] font-semibold mb-4">What do you think about this story?</p>
+    <div class="flex flex-col md:flex-row gap-3">
+      <a href="#" target="_blank" rel="noopener" class="flex-1 text-center px-5 py-3 text-[13px] font-semibold tracking-wide uppercase" style="background:var(--ink); color:var(--paper);">Read more</a>
+      <button type="button" class="flex-1 text-center px-5 py-3 text-[13px] font-semibold tracking-wide uppercase border" style="border-color:var(--ink);">Save for later</button>
+      <button type="button" class="flex-1 text-center px-5 py-3 text-[13px] font-semibold tracking-wide uppercase border" style="border-color:var(--ink);">Not interested</button>
+    </div>
+  </section>
+
 </main>
-<!-- Footer -->
-<footer class="bg-background border-t border-outline-variant w-full mt-stack-lg">
-<div class="w-full px-margin-mobile md:px-margin-desktop py-stack-md max-w-container-max mx-auto">
-<!-- Newsletter Preferences Section -->
-<div class="mb-stack-lg border-b border-outline-variant pb-stack-lg">
-<h3 class="font-headline-md text-headline-md text-primary mb-2">Personalized Stories</h3>
-<p class="font-body-md text-body-md text-on-surface-variant mb-stack-md">Personalized stories based on what you read, save, and engage with. Your preferences are used to recommend the best content.</p>
-<div class="flex flex-col md:flex-row gap-4">
-<a class="font-label-md text-label-md uppercase tracking-wider text-primary border-b border-primary hover:opacity-70 transition-opacity pb-1 inline-block" href="#">Manage Preferences</a>
-<a class="font-label-md text-label-md uppercase tracking-wider text-primary border-b border-primary hover:opacity-70 transition-opacity pb-1 inline-block" href="#">Unsubscribe</a>
-</div>
-</div>
 
-<!-- Footer Links -->
-<div class="flex flex-col md:flex-row justify-between items-center gap-stack-sm">
-<!-- Brand & Copyright -->
-<div class="flex flex-col md:flex-row items-center gap-2 md:gap-4 text-center md:text-left">
-<span class="font-display text-label-md font-bold text-primary">Recommendation Engine</span>
-<span class="hidden md:inline text-outline-variant">|</span>
-<span class="font-body-md text-body-md text-secondary">© 2026 Recommendation Engine. All rights reserved.</span>
-</div>
-<!-- Footer Navigation -->
-<nav class="flex gap-stack-md mt-4 md:mt-0">
-<a class="font-body-md text-body-md text-secondary hover:text-primary transition-colors opacity-100 hover:opacity-80" href="#">Privacy</a>
-<a class="font-body-md text-body-md text-secondary hover:text-primary transition-colors opacity-100 hover:opacity-80" href="#">Terms</a>
-<a class="font-body-md text-body-md text-secondary hover:text-primary transition-colors opacity-100 hover:opacity-80" href="#">Contact</a>
-</nav>
-</div>
-</div>
+<!-- NBT Footer -->
+<!-- Placeholder — swap this block for Navbharat Times' actual footer (logo, app links, social icons, legal text) when you have it. -->
+<footer class="border-t rule">
+  <div class="max-w-[680px] mx-auto px-5 py-8 text-center">
+    <p class="text-[13px] mb-3" style="color:var(--sub);">You're receiving this because you subscribed to the Navbharat Times Digest.</p>
+    <div class="flex items-center justify-center gap-4 text-[12px]" style="color:var(--sub);">
+      <a href="#" class="underline">Privacy policy</a>
+      <span>&middot;</span>
+      <a href="#" class="underline">Terms of use</a>
+      <span>&middot;</span>
+      <a href="#" class="underline">Contact us</a>
+    </div>
+    <p class="text-[11px] mt-5" style="color:var(--sub);">&copy; 2026 Times Internet Limited. All rights reserved.</p>
+  </div>
 </footer>
-</body></html>
+
+</body>
+</html>
